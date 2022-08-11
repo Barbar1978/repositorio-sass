@@ -1,0 +1,36 @@
+/*header nav*/
+.header {
+
+    h1 {
+        display: flex;
+        color: rgb(209, 48, 220);
+        font-size: 40px;
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.587);
+        padding: 5px;
+
+        ul {
+            display: flex;
+            list-style: none;
+
+            li a {
+                text-decoration: none;
+                color: white;
+                font-weight: 800;
+                font-size: 15px;
+                margin: 20px;
+            }
+
+        }
+
+    }
+
+}
