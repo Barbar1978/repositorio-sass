@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 * {
    margin: 0;
@@ -10,7 +11,9 @@ body {
    font-family: "poppins", sans-serif;
    font-weight: 300;
    font-size: 20px;
+   background-color: rosybrown;
 }
+
 
 /*header nav*/
 header nav {
@@ -57,7 +60,7 @@ header nav ul li a {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   color: white;
+   color: rgb(61, 8, 30);
 
 }
 
@@ -112,7 +115,7 @@ header nav ul li a {
 .productos div div {
    border: 1px solid gray;
    width: 300px;
-   height: 550px;
+   height: 400px;
    text-align: center;
    background-color: rgb(123, 10, 102);
    color: white;
@@ -144,36 +147,28 @@ header nav ul li a {
    justify-content: center;
    justify-items: center;
    align-items: baseline;
+   grid-template-columns: repeat(3, 1fr);
 }
 
 
 .galeria div img {
    width: 100%;
    height: 100%;
-   margin-top: 50px;
+   margin-top: 30px;
    object-fit: cover;
-   grid-auto-rows: 250px;
+   grid-auto-rows: 200px;
    gap: 15px;
-   box-shadow: 9px 10px 21px -8px rgba (0, 0, 0, 0.75);
-
 
 }
 
-.grid-container {
-   position: relative;
-
+/*contactos*/
+h2 {
+   font-size: 40px;
+   font-weight: bold;
+   text-align: center;
+   text-transform: uppercase;
+   color: #180000c2;
 }
-
-.grid-container img a {
-   position: absolute;
-   bottom: 0;
-   background-color: rgba(0, 0, 0, 0.509);
-   width: 100%;
-   height: 100%;
-   color: white;
-}
-
-/*main contactos */
 
 .dulce {
    display: flex;
@@ -184,23 +179,6 @@ header nav ul li a {
    align-items: center;
 }
 
-#myDIV {
-   width: 100%;
-   height: 100%;
-   background: red;
-   animation: mymove 5s infinite;
-}
-
-@keyframes mymove {
-   from {
-      background-color: red;
-   }
-
-   to {
-      background-color: blue;
-   }
-}
-
 input[type=text],
 select,
 textarea {
@@ -208,236 +186,106 @@ textarea {
    padding: 12px;
    border: 1px solid #ccc;
    border-radius: 4px;
-   resize: vertical;
+   resize: horizontal;
 }
 
 label {
-   padding: 12px 12px 12px 0;
+   padding: 15px 15px 15px 0;
    display: inline-block;
 }
 
 input[type=submit] {
    background-color: #711049;
    color: white;
-   padding: 12px 20px;
+   padding: 4px 10px;
    border: none;
-   border-radius: 4px;
+   border-radius: 2px;
    cursor: pointer;
    float: right;
 }
 
 .container {
    display: flex;
-   border-radius: 5px;
+   width: 100%;
+   height: 90%;
+   border-radius: 2px;
    background-color: #f2f2f2;
-   padding: 20px;
-}
-
-.col-25 {
-   float: left;
-   width: 25%;
-   margin-top: 6px;
-}
-
-.col-75 {
-   float: left;
-   width: 75%;
-   margin-top: 6px;
-}
-
-.row:after {
-   content: "";
-   display: table;
-   clear: both;
-}
-
-h2 {
-   text-align: center;
-   justify-content: center;
-   font-weight: 150px;
-   font-size: 40px;
-
+   padding: 10px;
+  
 }
 
 /*main galeria*/
-#main {
-   display: flex;
-   flex-direction: column;
-   height: 2900px;
-   justify-content: center;
-   align-items: center;
-}
+
 
 
 /*main pasteleria*/
 .pasteles {
- display: flex;
- flex-direction: column;
- height: 2900px;
- background-color: rosybrown;
- justify-content: space-evenly;
- align-items: center;
+   display: flex;
+   flex-direction: column;
+   height: 2900px;
+   background-color: rosybrown;
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 10px;
+   margin: 10px;
 }
 
-#row-padre {
- flex-direction: row;
- flex-wrap: nowrap;
- align-items: center;
- justify-content: space-evenly;
- height: 30%;
- width: 90%;
- content: "";
- display: table;
- clear: both;
-}
-
-#column-hijo {
- display: flex;
- flex-direction: column;
- justify-content: space-around;
- align-items: center;
- height: 70%;
- float: left;
- width: 33.33%;
-
-}
-
-#column-hijo {
- display: flex;
- background-color: rgb(130, 25, 128);
- flex-direction: column;
- justify-content: space-around;
- align-items: center;
- height: 70%;
- float: left;
- width: 33.33%;
- padding: 15px;
-
-}
-
-#column-hijo {
- display: flex;
- flex-direction: column;
- justify-content: space-around;
- align-items: center;
- height: 70%;
- float: left;
- width: 33.33%;
+.fotos {
+   justify-content: center;
+   margin: 16px;
+   padding: 16px;
 
 }
 
 .img_card {
- height: 50%;
- width: 80%;
+   height: 50%;
+   width: 80%;
 }
 
-.titulo_card {
- text-align: center;
- font-size: 30px;
- color: rgb(49, 49, 49);
-}
-
-.parrafo_card {
- text-align: center;
- font-family: Verdana, Geneva, Tahoma, sans-serif;
- font-size: 20px;
- width: 11em;
- border: 1px solid #000000;
- word-wrap: break-word;
-}
-
-.boton_card {
- background-color: rgb(186, 151, 151);
- height: 10%;
- width: 40%;
- border: 0;
+.card_title {
+   text-align: center;
+   font-size: 30px;
+   color: rgb(49, 49, 49);
 }
 
 .card {
- box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
- padding: 16px;
- text-align: center;
- background-color: #f1f1f1;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   padding: 16px;
+   margin: 16px;
+   text-align: center;
+   background-color: #f1f1f1;
 }
-
-/*main quienes somos*/
-
-.main {
- max-width: 1000px;
- margin: auto;
-}
-
-.glow h1 {
- text-align: center;
- justify-content: center;
- font-size: 50px;
- word-break: break-all;
-}
-
-.glow {
- display: flex;
- width: 600px;
- height: 90px;
- background: rgb(93, 6, 61);
- animation: mymove 5s infinite;
-}
-
-@keyframes mymove {
- from {
-    background-color: rgb(255, 0, 149);
- }
-
- to {
-    background-color: rgb(212, 0, 255);
- }
-}
-
-.row {
- margin: 8px -16px;
-}
-
-.row,
-.row>.column {
- padding: 8px;
-}
-
-.column {
- float: left;
- width: 25%;
-}
-
-.row:after {
- content: "";
- display: table;
- clear: both;
-}
-
-.content {
- background-color: white;
- padding: 10px;
-}
-
-.content img {
- width: 100%;
-}
-
-
-
-
 
 
 /*main quienes somos*/
 
-.main {
-   max-width: 1000px;
-   margin: auto;
+.quienes {
+
+   align-items: center;
+   width: 90%;
+   height: 1900px;
+
+}
+
+.card-img {
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   padding: 20px;
+   margin: 20px;
+   text-align: center;
+   background-color: #f1f1f1;
 }
 
 .glow h1 {
    text-align: center;
    justify-content: center;
    font-size: 50px;
-   word-break: break-all;
+   line-height: 25px;
+   font-weight: 30px;
+   align-items: center;
+
 }
 
 .glow {
@@ -446,6 +294,8 @@ h2 {
    height: 90px;
    background: rgb(93, 6, 61);
    animation: mymove 5s infinite;
+   margin: 20px;
+   padding: 20px;
 }
 
 @keyframes mymove {
@@ -456,40 +306,34 @@ h2 {
    to {
       background-color: rgb(212, 0, 255);
    }
-}
-.row {
-   margin: 8px -16px;
+
 }
 
-.row,
-.row>.column {
-   padding: 8px;
+.letra h2 {
+   color: white;
+   text-align: center;
+   font-weight: 300px;
+   font-size: 40px;
+   line-height: 25px;
+   padding: 30px;
 }
 
-.column {
-   float: left;
-   width: 25%;
+
+.letra p {
+   color: white;
+   text-align: center;
+   font-weight: 200px;
+   font-size: 20px;
+   line-height: 25px;
+   padding: 30px;
 }
 
-.row:after {
-   content: "";
-   display: table;
-   clear: both;
-}
-
-.content {
-   background-color: white;
-   padding: 10px;
-}
-
-.content img {
-   width: 100%;
-}
-*/
 /*footer*/
 .footer {
+   width: 100%;
+   height: 300px;
    overflow: hidden;
-   background-color: #f1f1f1;
+   background-color: rgb(61, 9, 61);
    padding: 20px 10px;
 }
 
@@ -559,14 +403,9 @@ h2 {
    }
 
    .galeria {
-      width: 100%;
-      margin-top: 40px;
-      display: grid;
-      grid-auto-rows: 300px;
-      gap: 15px;
-      justify-content: center;
-      justify-items: center;
-      align-items: baseline;
+
+      grid-template-columns: repeat(1, 1fr);
+
    }
 
    h1 {
@@ -575,7 +414,7 @@ h2 {
 
    }
 
-   .column {
+   .col {
       width: 100%;
    }
 
@@ -588,7 +427,7 @@ h2 {
    }
 
    /*galeria*/
-   #carrusel {
+   #carousel {
       width: 100%;
       height: 1000px;
    }
@@ -602,6 +441,10 @@ h2 {
    }
 
    /*quienes somos*/
+   .quienes {
+      height: 2700px;
+   }
+
    .glow h1 {
       font-weight: 30px;
       font-size: 25px;
@@ -647,7 +490,7 @@ h2 {
    }
 
    /*quienes somos */
-   .column {
+   .col {
       width: 50%;
    }
 }

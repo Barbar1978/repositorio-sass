@@ -20,20 +20,19 @@
         line-height: 25px;
         border: 1px solid rgb(217, 172, 189);
         padding: 10px;
+    }
 
-        p {
-            margin: 12px;
-            font-size: 30px;
-        }
+    p {
+        margin: 12px;
+        font-size: 30px;
+    }
 
-        a {
-            text-decoration: none;
-            color: white;
-            font-size: 20px;
-            background-color: rgb(81, 17, 76);
-            padding: 10px;
-
-        }
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        background-color: rgb(81, 17, 76);
+        padding: 10px;
 
     }
 
@@ -41,56 +40,59 @@
 
 
 .productos {
-    h3 {
-        background-color: rgb(106, 16, 95);
-        color: white;
-        text-align: center;
-        font-weight: 300px;
-        font-size: 40px;
-        line-height: 25px;
-        border: 1px solid rgb(217, 172, 189);
-        padding: 30px;
-    }
-
-
     .productos>div {
         display: flex;
         justify-content: space-around;
         align-items: center;
         margin-top: 20px;
         flex-wrap: wrap;
-    }
+
+        h3 {
+            background-color: rgb(106, 16, 95);
+            color: white;
+            text-align: center;
+            font-weight: 300px;
+            font-size: 40px;
+            line-height: 25px;
+            border: 1px solid rgb(217, 172, 189);
+            padding: 30px;
+
+        }
+
+        div div img {
+            width: 100%;
+            height: 300px;
+
+            div div {
+                border: 1px solid gray;
+                width: 300px;
+                height: 550px;
+                text-align: center;
+                background-color: rgb(123, 10, 102);
+                color: white;
+                margin: 20px;
+                padding: 10px;
+                box-shadow: 9px -11px 20px -11px rgba (0, 0, 0, 0.75);
 
 
-    div div img {
-        width: 100%;
-        height: 300px;
-    }
 
-    div div {
-        border: 1px solid gray;
-        width: 300px;
-        height: 550px;
-        text-align: center;
-        background-color: rgb(123, 10, 102);
-        color: white;
-        margin: 20px;
-        padding: 10px;
-        box-shadow: 9px -11px 20px -11px rgba (0, 0, 0, 0.75);
+                div div h4 {
+                    margin-bottom: 10px;
 
-    }
+                }
 
-    div div h4 {
-        margin-bottom: 10px;
-    }
+                div div a {
+                    text-decoration: none;
+                    color: rgba(0, 0, 0);
+                    background-color: white;
+                    font-weight: 900;
+                    padding: 5px;
 
-    div div a {
-        text-decoration: none;
-        color: rgba(0, 0, 0);
-        background-color: white;
-        font-weight: 900;
-        padding: 5px;
+                }
 
+
+            }
+        }
     }
 }
 
@@ -106,30 +108,32 @@
 
 
 
-    .div img {
-        width: 100%;
-        height: 100%;
-        margin-top: 50px;
-        object-fit: cover;
-        grid-auto-rows: 250px;
-        gap: 15px;
-        box-shadow: 9px 10px 21px -8px rgba (0, 0, 0, 0.75);
-
-
-    }
 
     .grid-container {
         position: relative;
 
-    }
 
-    .grid-container img a {
-        position: absolute;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.509);
-        width: 100%;
-        height: 100%;
-        color: white;
+
+        .grid-container img a {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.509);
+            width: 100%;
+            height: 100%;
+            color: white;
+
+
+            .div img {
+                width: 100%;
+                height: 100%;
+                margin-top: 50px;
+                object-fit: cover;
+                grid-auto-rows: 250px;
+                gap: 15px;
+                box-shadow: 9px 10px 21px -8px rgba (0, 0, 0, 0.75);
+            }
+
+        }
     }
 }
 
@@ -149,15 +153,15 @@
         height: 100%;
         background: red;
         animation: mymove 5s infinite;
-    }
 
-    @keyframes mymove {
-        from {
-            background-color: red;
-        }
+        @keyframes mymove {
+            from {
+                background-color: red;
+            }
 
-        to {
-            background-color: blue;
+            to {
+                background-color: blue;
+            }
         }
     }
 
@@ -219,6 +223,7 @@
 
     }
 }
+
 
 /*main galeria*/
 #main {
@@ -425,12 +430,12 @@
     header {
         height: 350px;
 
-    }
 
-    header nav {
-        display: flex;
-        flex-direction: column;
-        height: 300px;
+        header nav {
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+        }
 
     }
 
@@ -451,16 +456,17 @@
         width: 100vw;
         align-items: center;
         justify-content: space-evenly;
-    }
 
-    .hero h2 {
-        font-size: 40px;
-        margin: 10px
-    }
 
-    .hero p {
-        margin: 10px;
-        font-size: 15px;
+        .h2 {
+            font-size: 40px;
+            margin: 10px
+        }
+
+        .p {
+            margin: 10px;
+            font-size: 15px;
+        }
     }
 
     .galeria {
@@ -480,7 +486,7 @@
 
     }
 
-    .column {
+    .col {
         width: 100%;
     }
 
@@ -507,14 +513,15 @@
     }
 
     /*quienes somos*/
-    .glow h1 {
-        font-weight: 30px;
-        font-size: 25px;
-    }
-
+   
     .glow {
         width: 300px;
         height: 50px;
+        .glow h1 {
+            font-weight: 30px;
+            font-size: 25px;
+        }
+    
     }
 
     /*pateleria artesanal*/
@@ -552,7 +559,7 @@
     }
 
     /*quienes somos */
-    .column {
+    .col{
         width: 50%;
     }
 }
