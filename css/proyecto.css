@@ -2,9 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
-}
-  body {
+  box-sizing: border-box; }
+  * body {
     font-family: "poppins", sans-serif;
     font-weight: 300;
     font-size: 20px; }
@@ -12,7 +11,7 @@
 /*header nav*/
 .header h1 {
   display: flex;
-  color: #d130dc;
+  color: #881288;
   font-size: 40px; }
 
 .header nav {
@@ -26,12 +25,19 @@
   .header nav ul {
     display: flex;
     list-style: none; }
-    .header nav ul li a {
+    .header nav ul li {
       text-decoration: none;
       color: white;
       font-weight: 800;
       font-size: 15px;
       margin: 20px; }
+      .header nav ul li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-weight: 800;
+        font-size: 15px;
+        margin: 20px; }
 
 /*main index*/
 .hero {
@@ -308,7 +314,7 @@
 /*footer*/
 .footer {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #75186e;
   padding: 20px 10px; }
   .footer .footer a {
     float: left;
@@ -329,6 +335,7 @@
 /*ms*/
 @media only screen and (max-width: 600px) {
   header {
+    color: #881288;
     height: 350px; }
     header header nav {
       display: flex;

@@ -1,9 +1,10 @@
 /*header nav*/
 .header {
 
+
     h1 {
         display: flex;
-        color: rgb(209, 48, 220);
+        color:$fondo-header;
         font-size: 40px;
 
     }
@@ -21,16 +22,23 @@
             display: flex;
             list-style: none;
 
-            li a {
+            li  {
                 text-decoration: none;
                 color: white;
                 font-weight: 800;
                 font-size: 15px;
                 margin: 20px;
+            
+               a {
+                display: block;
+                text-decoration: none;
+                color: white;
+                font-weight: 800;
+                font-size: 15px;
+                margin: 20px;
+               }
             }
-
         }
 
     }
-
 }

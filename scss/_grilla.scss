@@ -398,7 +398,7 @@
 /*footer*/
 .footer {
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #75186e;
     padding: 20px 10px;
 
 
@@ -428,6 +428,7 @@
 @media only screen and (max-width:600px) {
 
     header {
+        color:$fondo-header ;
         height: 350px;
 
 
