@@ -1,7 +1,5 @@
 /*main index*/
-.maiindex {
-    background: #c76ae4;
-}
+
 
 .hero {
     width: 100%;
@@ -121,13 +119,10 @@
     }
 }
 
-
-
-
 /*main pasteleria*/
 #mainpasteleria {
     height: 2300px;
-    background:$main-color;
+    background: $fondo-color;
     color: #fff;
     padding-top: 90px;
     padding-bottom: 90px;
@@ -147,7 +142,7 @@
 
 #portfolio {
 
-    background: #f3a7e9;
+    background: $fondo-color;
 
     .portfolio-wrap {
         display: flex;
@@ -174,7 +169,7 @@
     height: 1500px;
     justify-content: center;
     align-items: center;
-    background-color:$main-color;
+    background-color: $fondo-color;
 
 
     #myDIV {
@@ -262,7 +257,7 @@
     height: 1700px;
     justify-content: center;
     align-items: center;
-    background-color: $main-color;
+    background-color: $fondo-color;
 
 
 
@@ -326,3 +321,28 @@
 }
 
 /*maingaleria*/
+.main {
+
+
+
+    .container-fluid-3 {
+        background-color:violet ;
+
+        display: flex;
+        height: 1300px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        right: 15%;
+        bottom: 1.25rem;
+        left: 15%;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        color: #670898;
+    }
+}

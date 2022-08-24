@@ -5,7 +5,7 @@
    box-sizing: border-box;
 }
 
-// Main Styling 
+// cuerpo 
 body,
 html {
    font-family: "Roboto", sans-serif;
@@ -62,7 +62,7 @@ a:visited {
    color: #000;
 }
 
-// Utility Classes
+// Utilidades de class
 .large {
    font-size: 1.25rem;
 }
@@ -440,33 +440,33 @@ a:visited {
 
 .btn-light {
    @extend %btn;
-   background: $main-color;
+   background:violet;
    color: #fff;
 
    &:hover {
-      background: lighten($main-color, 10%);
+      background: lightpink
    }
 }
 
 .btn-dark {
    @extend %btn;
-   background: $gray1-color;
+   background: whitesmoke;
    color: #fff;
 
    &:hover {
-      background: lighten($gray1-color, 10%);
+      background: lighten(white, 10%);
    }
 }
 
 .btn-outline {
    @extend %btn;
    background: #fff;
-   color: $main-color;
+   color: violet;
    font-weight: bold;
-   border: 2px solid $main-color;
+   border: 2px solid white;
 
    &:hover {
-      background: lighten($main-color, 10%);
+      background: lighten(white, 10%);
       color: #fff;
    }
 }

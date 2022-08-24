@@ -1,36 +1,34 @@
 /*header nav */
-.top{
-    background-color: #c76ae4;
-}
-#navbar {
+.top {
 
-    .logo {
+
+
+
+    #navbar {
         float: left;
+        background-color: $fondo-nav ;
 
-        img {
-            height: 50px;
+
+        ul {
+            float: right;
+
+
+            li {
+                list-style: none;
+                float: left;
+
+
+                li a {
+                    display: block;
+                    padding: 20px;
+                    text-align: center;
+
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
         }
     }
-
-    ul {
-        float: right;
-
-        li {
-            list-style: none;
-            float: left;
-
-            a {
-                display: block;
-                padding: 20px;
-                text-align: center;
-            }
-
-            a:hover {
-                text-decoration: underline;
-                color: antiquewhite;
-            }
-        }
-    }
-
-    
 }
