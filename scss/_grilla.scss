@@ -1,348 +1,164 @@
-/*main index*/
 
-
-.hero {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.498), rgba(0, 0, 0, 0.479)), url(../img/baner-2.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-
-
-    .hero h2 {
-        font-family: "PT Mono", monospace;
-        font-weight: 400px;
-        font-size: 50px;
-        line-height: 25px;
-        border: 1px solid rgb(217, 172, 189);
-        padding: 10px;
-    }
-
-    .hero p {
-        margin: 12px;
-        font-size: 30px;
-
-
-        .hero a {
-            text-decoration: none;
-            color: white;
-            font-size: 20px;
-            background-color: rgb(81, 17, 76);
-            padding: 10px;
-        }
-    }
+.container__ola {
+    background: $color-principal;
+    @include container-configuracion();
 }
 
-
-.galeria {
-    width: 100%;
-    padding: 5px;
-    margin: 5px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 300px;
-    gap: 15px;
-    justify-content: center;
-    justify-items: center;
-    align-items: baseline;
-
-
-
-    .galeria div img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 300px;
-        gap: 15px;
-        box-shadow: 9px 10px 21px -8px rgba (0, 0, 0, 0.75);
-
-
-    }
-
-
-    .grid-container img a {
-        position: absolute;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.509);
-        width: 100%;
-        height: 100%;
-        color: white;
-    }
-}
-
-
-// Funciones Sub
-#features-sub {
-    display: flex;
-
-    .features-sub-1 {
-        background: url('../img/gallery-9.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 470px;
-        width: 100%;
-    }
-
-    .features-sub-2 {
-        background: url('../img/gallery-4.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 470px;
-        width: 100%;
-    }
-
-    .features-sub-content {
-        text-align: center;
-        padding: 80px;
-
-        &-box {
-            background: rgba(255, 255, 255, 0.5);
-            margin: 0 auto;
-            padding: 80px 120px;
-
-            a {
-                padding: 11px 15px;
-                font-size: 14px;
-            }
-        }
-    }
-}
-
-/*main pasteleria*/
-#mainpasteleria {
-    height: 2300px;
-    background: $fondo-color;
-    color: #fff;
-    padding-top: 90px;
-    padding-bottom: 90px;
+.content__ola {
     text-align: center;
-
-    h1 {
-        padding: 20px;
-        font-weight: lighter;
-    }
-
-    p {
-        width: 65%;
-        margin: 0 auto;
-        font-weight: lighter;
-    }
+    font-size: 2em;
+    color: rgba(255,255,255, .8);
 }
 
-#portfolio {
-
-    background: $fondo-color;
-
-    .portfolio-wrap {
-        display: flex;
-        justify-content: space-between;
-
-        &-box {
-            img {
-                height: 200px;
-            }
-
-            p {
-                background: #c76ae4;
-                padding: 20px;
-            }
-        }
-    }
+.ola{
+    padding-right: 0px;
+    padding-left: 0px;
+    z-index: 3;
 }
 
-/*main cntacto*/
-.dulce {
-    display: flex;
-    flex-direction: column;
+.waves {
     width: 100%;
-    height: 1500px;
-    justify-content: center;
-    align-items: center;
-    background-color: $fondo-color;
+    @include waves-config();
+}
 
+.wave {
+    position: absolute;
+    left: -180px;
+    bottom: 0;
+    width: 2402px;
+    height: 427px;
+    background: url(../img/baner-2.jpg) center bottom no-repeat;
+    animation: 5s wave ease-in-out infinite alternate;
+}
 
-    #myDIV {
-        width: 100%;
-        height: 100%;
-        background: rgb(131, 115, 130);
-        animation: mymove 5s infinite;
+.wave.a {
+    background-position: 0 -854px;
+}
+
+.wave.b {
+    background-position: 0 -427px;
+    animation-delay: .6s;
+}
+
+.wave.c {
+    background-position: 0 0;
+    animation-delay: 1.2s;
+}
+
+@keyframes wave {
+    0% {
+        transform: translate(0 , 0);
     }
-
-    @keyframes mymove {
-        from {
-            background-color: rgb(185, 156, 178);
-        }
-
-        to {
-            background-color: rgb(98, 69, 99);
-        }
+    50% {
+        transform: translate(-80px, 30px);
     }
-
-    input[type=text],
-    select,
-    textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: vertical;
-    }
-
-    label {
-        padding: 12px 12px 12px 0;
-        display: inline-block;
-    }
-
-    input[type=submit] {
-        background-color: #711049;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        float: right;
-    }
-
-    .container-fluid {
-        display: flex;
-        max-width: 500px;
-        border-radius: 5px;
-        background-color: #50193f;
-
-    }
-
-    .col-25 {
-        float: left;
-        width: 25%;
-        margin-top: 6px;
-    }
-
-    .col-75 {
-        float: left;
-        width: 75%;
-        margin-top: 6px;
-    }
-
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    h2 {
-        text-align: center;
-        justify-content: center;
-        font-weight: 150px;
-        font-size: 40px;
-
+    100% {
+        transform: translate(160px, -60px);
     }
 }
 
-/* main quienes*/
-.quienes {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 1700px;
-    justify-content: center;
-    align-items: center;
-    background-color: $fondo-color;
-
-
-
-    .glow h1 {
-        text-align: center;
-        justify-content: center;
-        font-size: 50px;
-        word-break: break-all;
-    }
-
-    .glow {
-        display: flex;
-        width: 600px;
-        height: 90px;
-        background: rgb(93, 6, 61);
-        animation: mymove 5s infinite;
-    }
-
-    @keyframes mymove {
-        from {
-            background-color: rgb(255, 0, 149);
-        }
-
-        to {
-            background-color: rgb(212, 0, 255);
-        }
-    }
-
-    .row {
-        margin: 8px -16px;
-    }
-
-    .row,
-    .row>.col {
-        padding: 8px;
-    }
-
-    .col {
-        float: left;
-        width: 25%;
-    }
-
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    .container-fluid-1 {
-        background-color: #7c3284;
-        padding: 10px;
-        width: 80%;
-        height: 80%;
-
-
-        .container-fluid-1 img {
-            width: 100%;
-
-        }
-    }
+.contacto{
+    position: relative;
+    z-index: 2; /*Para ordenar div - suerponer uno por otro */
+    background-color: white;
+}
+.titulo__contacto{
+    position: relative;
+    text-align: center;
+    
 }
 
-/*maingaleria*/
-.main {
+.column {
+    float: left;
+    width: 80%; 
+}
+//hero section
 
+.hero{
+    height: $hero-height-vh;
+    background-image: url("../img/baner-2.jpg");
+    @include hero-configuracion();
+}
 
+.hero__contenedor{
+    width: 400px;
+    width: 600px;
+    position: relative;
+    left: 3rem;
 
-    .container-fluid-3 {
-        background-color:violet ;
+}
+.hero__titulo{   
+    color: $color-hero-titulo;
+    font-size: 3.2rem;  
+    margin-bottom: 3rem;
+}
 
-        display: flex;
-        height: 1300px;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+.btn__compra{
+    font-size: 1rem;
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+}
+
+/*Uso de extends*/
+.btn__mensaje{
+    @extend.btn__compra;
+    color: green;
+}
+.btn__precios{
+    @extend.btn__compra;
+    color: blue;
+}
+.hero{
+    -webkit-animation: bg-pan-top 60s both;
+            animation: bg-pan-top 60s both;
+}
+@-webkit-keyframes bg-pan-top {
+    0% {
+        background-position: 50% 100%;
     }
-
-    .carousel-caption {
-        position: absolute;
-        right: 15%;
-        bottom: 1.25rem;
-        left: 15%;
-        padding-top: 1.25rem;
-        padding-bottom: 1.25rem;
-        color: #670898;
+    100% {
+        background-position: 50% 0%;
     }
+}
+@keyframes bg-pan-top {
+    0% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+}
+/*Blog mosotros*/
+.blog__body {
+    position: relative;
+    z-index: 2; 
+    background-color: $bg-color-blog;
+}
+
+.container__about{
+    position: relative;
+    background-color: $bg-color-blog;
+}
+
+.texto__about{
+    text-align: justify;
+}
+
+
+.album__alfajores{
+    overflow: hidden;
+}
+
+.container__spotify{
+    overflow: hidden;
+}
+
+.album__instagram{
+    overflow: hidden;
+}
+//about
+.img__about{
+    size-adjust: 100%;
+    max-width: 100%;
+    height: auto;
 }

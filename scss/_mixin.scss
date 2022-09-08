@@ -1,12 +1,46 @@
-@mixin flex( $dir , $wrap , $just , $align ){
+@mixin flex($dir , $wrap , $just , $align ) {
     display: flex;
     flex-flow: $dir $wrap;
     justify-content: $just;
     align-items: $align;
 }
 
-@mixin media(){
+@mixin media() {
     @media screen and (max-width:480px) {
         @content
     }
+}
+
+@mixin hero-configuracion() {
+    height: 380px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@mixin waves-config {
+    bottom: -135px;
+    height: 527px;
+    position: absolute;
+    overflow: hidden;
+}
+
+@mixin reset-pm {
+    padding: 0;
+    margin: 0;
+
+}
+/*Estilos - Hero Section*/
+/*Uso ded mixis*/
+@mixin hero-configuracion {
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 2; /*Para ordenar div - suerponer uno por otro */
 }
