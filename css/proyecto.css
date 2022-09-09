@@ -44,7 +44,7 @@
 }
 
 .navbar-light {
-  background-color: #E3BC91;
+  background-color: #c59b6d;
 }
 
 .nav-link {
@@ -66,7 +66,7 @@
 
 /*Uso ded mixis*/
 .container__ola {
-  background: #E3BC91;
+  background: #9c6e3c;
   height: 380px;
   position: relative;
   display: -webkit-box;
@@ -201,7 +201,7 @@
 }
 
 .btn__precios {
-  color: blue;
+  color: rgb(22, 22, 153);
 }
 
 .hero {
@@ -238,7 +238,7 @@ body {
 }
 
 .bg__footer {
-  background-color: #E3BC91;
+  background-color: #b88c5d;
 }
 
 .logo__footer {
