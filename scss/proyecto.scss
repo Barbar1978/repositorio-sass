@@ -1,19 +1,13 @@
-@import"footer";
-@import"generales";
-@import"grilla";
-@import"navbar";
-@import"mobile";
-@import"variables";
+
 //importacion fuente
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 @import"variables";
 @import"mobile";
-@import"menu";
+@import"navbar";
 @import"generales";
 @import"footer";
 @import"grilla";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import 'mixins';
+@import 'mixin';

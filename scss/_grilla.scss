@@ -128,7 +128,8 @@
         background-position: 50% 0%;
     }
 }
-/*Blog mosotros*/
+
+/*Blog*/
 .blog__body {
     position: relative;
     z-index: 2; 
@@ -145,7 +146,7 @@
 }
 
 
-.album__alfajores{
+.album__productos{
     overflow: hidden;
 }
 
@@ -156,9 +157,50 @@
 .album__instagram{
     overflow: hidden;
 }
-//about
-.img__about{
-    size-adjust: 100%;
-    max-width: 100%;
-    height: auto;
+//pasteleria
+.card{
+    &:hover{
+    border: $color-principal 0.2em solid;
+    transform: scale(1.03);
+    }
 }
+
+.bg__card{
+    background: #eacda3;  
+    background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);  
+    background: linear-gradient(to right, #d6ae7b, #eacda3); 
+}
+
+.bg__title{
+    color: white;
+}
+/*Contacto*/
+
+.contacto{
+    position: relative;
+    z-index: 2; /*Para ordenar div - suerponer uno por otro */
+    background-color: white;
+}
+.titulo__contacto{
+    position: relative;
+    text-align: center;
+    
+}
+
+.column {
+    float: left;
+    width: 80%; 
+}
+//galeria
+#elaboration {
+    .elaboration-wrap {
+      display: flex;
+      justify-content: space-between;
+      &-box {
+        img {
+            width: 100%;
+           height: 300px;
+        }
+      }
+    } 
+  } 
